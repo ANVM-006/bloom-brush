@@ -157,6 +157,7 @@ const Stars = () => (
 
 const TulipGarden = () => {
   const tulips = [
+    { x: 20, color: "pink", stemHeight: 220, delay: 2.1, scale: 0.78 },
     { x: 80, color: "purple", stemHeight: 240, delay: 0.2, scale: 0.85 },
     { x: 160, color: "red", stemHeight: 280, delay: 0.8, scale: 1 },
     { x: 240, color: "pink", stemHeight: 260, delay: 0.5, scale: 0.95 },
@@ -169,13 +170,18 @@ const TulipGarden = () => {
     { x: 800, color: "purple", stemHeight: 295, delay: 1.1, scale: 0.97 },
     { x: 880, color: "orange", stemHeight: 255, delay: 0.7, scale: 0.9 },
     { x: 950, color: "red", stemHeight: 275, delay: 1.3, scale: 0.85 },
+    { x: 1020, color: "yellow", stemHeight: 245, delay: 2.0, scale: 0.82 },
+    { x: 1080, color: "purple", stemHeight: 260, delay: 2.3, scale: 0.88 },
     // Back row
+    { x: 40, color: "orange", stemHeight: 185, delay: 2.2, scale: 0.62 },
     { x: 120, color: "yellow", stemHeight: 200, delay: 1.5, scale: 0.7 },
     { x: 200, color: "white", stemHeight: 190, delay: 1.7, scale: 0.65 },
     { x: 360, color: "pink", stemHeight: 210, delay: 1.4, scale: 0.72 },
     { x: 520, color: "purple", stemHeight: 195, delay: 1.6, scale: 0.68 },
     { x: 680, color: "red", stemHeight: 205, delay: 1.8, scale: 0.7 },
     { x: 840, color: "orange", stemHeight: 198, delay: 1.9, scale: 0.66 },
+    { x: 980, color: "white", stemHeight: 192, delay: 2.4, scale: 0.64 },
+    { x: 1060, color: "red", stemHeight: 188, delay: 2.5, scale: 0.6 },
   ];
 
   return (
@@ -227,9 +233,9 @@ const TulipGarden = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
-        className="absolute bottom-[22vh] left-1/2 -translate-x-1/2 w-full max-w-5xl"
+        className="absolute bottom-[12vh] left-1/2 -translate-x-1/2 w-full max-w-6xl"
       >
-        <svg viewBox="0 0 1000 550" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+        <svg viewBox="-50 0 1200 550" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
           {/* Fireflies */}
           {Array.from({ length: 8 }).map((_, i) => (
             <Firefly key={i} delay={i * 0.8} />
