@@ -233,9 +233,9 @@ const TulipGarden = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
-        className="absolute bottom-[22vh] left-1/2 -translate-x-1/2 w-full max-w-5xl"
+        className="absolute bottom-[12vh] left-1/2 -translate-x-1/2 w-full max-w-6xl"
       >
-        <svg viewBox="0 0 1000 550" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+        <svg viewBox="-50 0 1200 550" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
           {/* Fireflies */}
           {Array.from({ length: 8 }).map((_, i) => (
             <Firefly key={i} delay={i * 0.8} />
