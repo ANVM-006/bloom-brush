@@ -36,7 +36,7 @@ const Tulip = ({
         ease: "easeInOut",
         delay,
       }}
-      transform={`scale(${scale})`}
+      transform={`translate(0, 0)`}
     >
       {/* Stem */}
       <path
