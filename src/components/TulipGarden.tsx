@@ -198,17 +198,17 @@ const TulipGarden = () => {
       <div
         className="absolute bottom-0 left-0 right-0"
         style={{
-          height: "18vh",
-          background: "linear-gradient(to bottom, #3d2d1e 0%, #2a1f15 100%)",
-          borderTop: "1px solid rgba(100,70,40,0.4)",
+          height: "28vh",
+          background: "linear-gradient(to bottom, #2d5016 0%, #1a3a0a 40%, #142e08 100%)",
+          borderTop: "1px solid rgba(60,100,40,0.5)",
         }}
       >
-        {/* Soil texture line */}
+        {/* Grass texture line */}
         <div
           className="absolute -top-[3px] left-0 right-0 h-[6px] rounded-t-sm"
           style={{
             background:
-              "linear-gradient(90deg, #3d2d1e 0%, #4a3522 15%, #3a2a18 30%, #4d3a24 45%, #382818 60%, #4a3522 75%, #3d2d1e 100%)",
+              "linear-gradient(90deg, #2d5016 0%, #3a6b1e 15%, #265212 30%, #3d7020 45%, #224a10 60%, #3a6b1e 75%, #2d5016 100%)",
           }}
         />
       </div>
@@ -227,23 +227,13 @@ const TulipGarden = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
-        className="absolute bottom-[15vh] left-1/2 -translate-x-1/2 w-full max-w-5xl"
+        className="absolute bottom-[22vh] left-1/2 -translate-x-1/2 w-full max-w-5xl"
       >
         <svg viewBox="0 0 1000 550" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
-          <defs>
-            <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#3d2d1e" stopOpacity={0.7} />
-              <stop offset="100%" stopColor="#2a1f15" stopOpacity={0.95} />
-            </linearGradient>
-          </defs>
-
           {/* Fireflies */}
           {Array.from({ length: 8 }).map((_, i) => (
             <Firefly key={i} delay={i * 0.8} />
           ))}
-
-          {/* Ground ellipse */}
-          <ellipse cx={500} cy={520} rx={550} ry={50} fill="url(#ground)" />
 
           {/* Tulips */}
           {tulips
